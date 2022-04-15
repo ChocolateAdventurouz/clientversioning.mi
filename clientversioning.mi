@@ -4,7 +4,6 @@
     Version: 1.0.0
     Authors: Rel@m
     Date: 14. Apr. 2022 - 23:46
-    Used for: Big Bento Redux
     Description: This script checks the mini
     Note: It is recommended to put it on the loadattribs.m file.
 -----------------------*/
@@ -12,6 +11,7 @@
 #include <lib/std.mi>
 
 Function clientversioning();
+// This example is used to Big Bento Redux
 clientversioning() {
     if (System.getWinampVersion() < "5.6") {
         messagebox("Error at Initalizing The Skin", "Error - Big Bento Redux", 0, "");
