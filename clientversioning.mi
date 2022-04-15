@@ -1,0 +1,25 @@
+/*---------------------
+    Filename: clientversioning.mi
+    Name: Winamp Client Version Blocker/Locker
+    Version: 1.0.0
+    Authors: Rel@m
+    Date: 14. Apr. 2022 - 23:46
+    Used for: Big Bento Redux
+    Description: This script checks the mini
+    Note: It is recommended to put it on the loadattribs.m file.
+-----------------------*/
+
+#include <lib/std.mi>
+
+Function clientversioning();
+clientversioning() {
+    if (System.getWinampVersion() < "5.6") {
+        messagebox("Error at Initalizing The Skin", "Error - Big Bento Redux", 0, "");
+    }
+    if (System.getWinampVersion() > "5.6") {
+        return;
+    }
+    if (System.getWinampVersion() == "5.666" ) { 
+        return;
+    }
+}
