@@ -14,7 +14,7 @@ Function clientversioning();
 // This example is used to Big Bento Redux
 clientversioning() {
     if (System.getWinampVersion() < "5.6") {
-        messagebox("Error at Initalizing The Skin", "Error - Big Bento Redux", 0, "");
+        messagebox("Error at Initalizing The Skin", "Error", 0, "");
     }
     if (System.getWinampVersion() > "5.6") {
         return;
